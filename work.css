@@ -1,0 +1,123 @@
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #030305;
+}
+nav{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex; 
+    -webkit-box-pack:end; 
+        -ms-flex-pack:end; 
+            justify-content:flex-end;
+    height: 75px;
+    width: 100%;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    padding: 30px 20px;
+    background-color:#030305;
+}
+li, a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #edf0f1;
+    text-decoration: none;
+    background-color:#030305;
+    padding: 10px 20px;
+}
+button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+section{
+    background-color:#030305;
+    margin: 0 0 0 25px;
+}
+.logo{
+    cursor: pointer;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 0px;
+}
+.nav_links li a {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color:#0088a9;
+}
+button {
+    padding: 10px 25px;
+    background-color: rgb(135, 49, 192);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.7);
+}
+#owimgs img{
+    height: 75vh;
+    width: 425px;
+    margin-left: 42px;
+    margin-bottom: 40px;
+}
+#lanimg img{
+    height: 60vh;
+    width: 44vw;
+    margin-left: 42px;
+    margin-bottom: 40px;
+}
+#fullimg img{
+    height: 97vh;
+    width: 91vw;
+    margin-left: 42px;
+    margin-bottom: 40px;
+}
+#owimgs video{
+    height: 75vh;
+    width: 450px;
+    margin-left: 42px;
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 600px) {
+    #owimgs img{
+        height: 85vh;
+        width: 425px;
+        margin-left: 8px;
+        margin-bottom: 40px;
+    }
+    #owimgs video{
+        height: 100vh;
+        width: 450px;
+        margin-left: -4px;
+        margin-bottom: 40px;
+    }
+    #lanimg img{
+        height: 300px;
+        width: 85vw;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+    #fullimg img{
+        height: 300px;
+        width: 85vw;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+}

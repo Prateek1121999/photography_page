@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display:flex; 
+    justify-content:flex-end;
+    height: 75px;
+    width: 100%;
+    align-items:center;
+    padding: 30px 20px;
+    background-color:#010204;
+}
+li, a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #edf0f1;
+    text-decoration: none;
+    background-color:#010204;
+    padding: 10px 20px;
+}
+button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.logo{
+    cursor: pointer;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 0px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color:#0088a9;
+}
+button {
+    padding: 10px 25px;
+    background-color: rgb(135, 49, 192);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.7);
+}
+#camera{
+    background-image: url("./Images/cam3.jpg");
+    background-size: cover;
+    background-position:bottom;
+    height: calc(100vh - 75px);
+    width: 100vw;
+}
+.txt{
+    height: 70vh;
+    width: 100vw;
+    color:lightcyan;
+    padding-top: 8%;
+    padding-left: 50px;
+    background: linear-gradient(to bottom, rgb(190, 49, 200),rgba(0,136,169));    
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.txt h1{
+    font-size: 65px;
+    font-family: "Montserrat", sans-serif;
+}
+.txt h2{
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
