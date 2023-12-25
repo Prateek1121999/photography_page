@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -91,33 +98,66 @@ button:hover{
 }
 #owimgs video{
     height: 75vh;
-    width: 450px;
+    width: 425px;
     margin-left: 42px;
     margin-bottom: 40px;
 }
 @media screen and (max-width: 600px) {
+    nav{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex; 
+        -webkit-box-pack:end; 
+            -ms-flex-pack:end; 
+                justify-content:flex-end;
+        height: 60px;
+        width: 100vw;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
+        padding: 30px 20px;
+        background-color:#010204;
+        border-bottom: 1px solid white;
+    }
+    li, a{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #edf0f1;
+        text-decoration: none;
+        background-color:#010204;
+        padding: 10px 20px;
+    }
+    button{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 450;
+        font-size: 18px;
+        color: #edf0f1;
+        padding: 10px 5px;
+    }
     #owimgs img{
-        height: 85vh;
-        width: 425px;
-        margin-left: 8px;
-        margin-bottom: 40px;
+        height: 75vh;
+        width: 100vw;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        padding-top: 20px;
     }
     #owimgs video{
-        height: 100vh;
-        width: 450px;
-        margin-left: -4px;
-        margin-bottom: 40px;
+        height: 75vh;
+        width: 100vw;
+        margin-left: 0px;
+        margin-bottom: 25px;
     }
     #lanimg img{
-        height: 300px;
-        width: 85vw;
-        margin-left: 10px;
-        margin-bottom: 40px;
+        height: 30vh;
+        width: 100vw;
+        margin-left: 0px;
+        margin-bottom: 25px;
     }
     #fullimg img{
-        height: 300px;
-        width: 85vw;
-        margin-left: 10px;
-        margin-bottom: 40px;
+        height: 30vh;
+        width: 100vw;
+        margin-left: 0px;
+        margin-bottom: 25px;
     }
 }
