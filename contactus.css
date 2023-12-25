@@ -78,14 +78,14 @@ button:hover{
 }
 #fullsection #contactme{
     height: 300px ;
-    width: 550px;
+    width: 100vh;
 }
 #fullsection #contactme h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 65px;
     text-align: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(190, 49, 200)),to(rgba(0,136,169)));
     background: -o-linear-gradient(top, rgb(190, 49, 200),rgba(0,136,169));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(190, 49, 200)),to(rgba(0,136,169)));
     background: linear-gradient(to bottom, rgb(190, 49, 200),rgba(0,136,169));    
     color: transparent;
     -webkit-background-clip: text;
@@ -107,8 +107,8 @@ button:hover{
     font-size: 75px;
     text-align: center;
     padding-top: 0px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(190, 49, 200)),to(rgba(0,136,169)));
     background: -o-linear-gradient(top, rgb(190, 49, 200),rgba(0,136,169));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(190, 49, 200)),to(rgba(0,136,169)));
     background: linear-gradient(to bottom, rgb(190, 49, 200),rgba(0,136,169));    
     color: transparent;
     -webkit-background-clip: text;
@@ -121,20 +121,87 @@ button:hover{
 }
 @media screen and (max-width: 600px) {
     #fullsection #contactme{
-        height: 300px ;
-        width: 450px;
+        height: 0vh ;
+        width: 100vw;
+        padding-top: 25px;
     }
     #fullsection #aboutus{
-        margin-top:150px;
         height: calc(100vh - 400px) ;
-        width: 475px;
+        width: 100vw;
     }
     #fullsection{
         background-color: #010204;
         background-size: cover;
         background-position:center;
-        height: calc(140vh - 75px);
+        height: calc(105vh - 75px);
         width: 100%;
         display:inline-block;
+    }
+    #fullsection #contactme h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 45px;
+        text-align: center;
+        background: -o-linear-gradient(top, rgb(190, 49, 200),rgba(0,136,169));
+        background: -webkit-gradient(linear, left top, left bottom, from(rgb(190, 49, 200)),to(rgba(0,136,169)));
+        background: linear-gradient(to bottom, rgb(190, 49, 200),rgba(0,136,169));    
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    #fullsection #contactme h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        text-align: center;
+        color:thistle;
+        font-weight: 400;
+    }
+    #fullsection #aboutus h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 45px;
+        text-align: center;
+        padding-top: 0px;
+        background: -o-linear-gradient(top, rgb(190, 49, 200),rgba(0,136,169));
+        background: -webkit-gradient(linear, left top, left bottom, from(rgb(190, 49, 200)),to(rgba(0,136,169)));
+        background: linear-gradient(to bottom, rgb(190, 49, 200),rgba(0,136,169));    
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    #fullsection #aboutus p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        padding-left : 10px;
+        color:thistle;
+        width: 100vw;
+    }
+    nav{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex; 
+        -webkit-box-pack:end; 
+            -ms-flex-pack:end; 
+                justify-content:flex-end;
+        height: 60px;
+        width: 100vw;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
+        padding: 30px 20px;
+        background-color:#010204;
+        border-bottom: 1px solid white;
+    }
+    li, a{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #edf0f1;
+        text-decoration: none;
+        background-color:#010204;
+        padding: 10px 20px;
+    }
+    button{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 450;
+        font-size: 18px;
+        color: #edf0f1;
+        padding: 10px 5px;
     }
 }
