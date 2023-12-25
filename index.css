@@ -1,3 +1,11 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
 *{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -79,8 +87,8 @@ button:hover{
     color:lightcyan;
     padding-top: 8%;
     padding-left: 50px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(190, 49, 200)),to(rgba(0,136,169)));
     background: -o-linear-gradient(top, rgb(190, 49, 200),rgba(0,136,169));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(190, 49, 200)),to(rgba(0,136,169)));
     background: linear-gradient(to bottom, rgb(190, 49, 200),rgba(0,136,169));    
     color: transparent;
     -webkit-background-clip: text;
@@ -93,4 +101,46 @@ button:hover{
     font-size: 50px;
     font-family: "Montserrat", sans-serif;
 }
+@media screen and (max-width: 600px) {
+    nav{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex; 
+        -webkit-box-pack:end; 
+            -ms-flex-pack:end; 
+                justify-content:flex-end;
+        height: 60px;
+        width: 100vw;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
+        padding: 30px 20px;
+        background-color:#010204;
+        border-bottom: 1px solid white;
+    }
+    li, a{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #edf0f1;
+        text-decoration: none;
+        background-color:#010204;
+        padding: 10px 20px;
+    }
+    button{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 450;
+        font-size: 18px;
+        color: #edf0f1;
+        padding: 10px 5px;
+    }
+    #camera{
+        background-image: url("./Images/cam3.jpg");
+        background-size: cover;
+        background-position:bottom;
+        height: calc(100vh - 60px);
+        width: 100vw;
+    }
+}
+
 
