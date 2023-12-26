@@ -127,7 +127,7 @@ button:hover{
         background-color: #010204;
         background-size: cover;
         background-position:center;
-        height: calc(105vh - 75px);
+        height: calc(100vh - 70px);
         width: 100%;
         display:inline-block;
     }
